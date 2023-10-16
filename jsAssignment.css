@@ -1,0 +1,15 @@
+#container{
+    background-color: antiquewhite;
+    width: 50%;
+    padding: 20px 20px;
+}
+#txtnum2{
+    background-color:aquamarine;
+}
+#txtnum1{
+    background-color:rgb(232, 118, 118);
+}
+
+input:hover{
+    background-color:red;
+    }
