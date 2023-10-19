@@ -11,7 +11,7 @@ for(var z = 1; z<10; z++){
     }
     console.log(z)
 }*/
-// program to check the number of occurrence of a character
+// program to check the number of occurrence of a character..
 
 
 const str ="Hi there, ! How is your day today ?";
