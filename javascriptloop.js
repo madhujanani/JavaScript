@@ -32,3 +32,7 @@ console.log("You selected the Letter :  " +letter);
 console.log("The  letter "+letter   +" occurs "  +result+  " times in the string");
 
 
+
+
+
+
