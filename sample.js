@@ -40,6 +40,10 @@ const result1 = countString(str, letter);
 console.log(str);
 console.log("You selected the Letter :  " +letter);
 console.log("The  letter "+letter   +" occurs "  +result1+  " times in the string");
+console.log("===========================================")
 
+let number =[2,3,4,5,6];
+let oddnum =number.filter(num => num%2!=0).map(n => n*n)
+console.log(oddnum)
 
 
