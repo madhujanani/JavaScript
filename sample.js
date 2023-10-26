@@ -47,3 +47,8 @@ let oddnum =number.filter(num => num%2!=0).map(n => n*n)
 console.log(oddnum)
 
 
+
+
+
+
+

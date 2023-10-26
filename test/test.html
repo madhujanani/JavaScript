@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./test.css">
+    <script src ="./test.js"></script>
+    <title>Userinput_form</title>
+</head>
+<body>
+    <form action="test1.html"  id="form" target="_blank">
+
+    <h1  style="text-align:center">Task/Assignment js-4</h1> 
+    <div id="container">
+        <label for="txtnum1">FirstName</label>
+        <input type="text" id ="txtnum1" value="hello">
+    <div>
+        <label for="pob">Designation</label>
+        <select id="pob">
+            <option>Manager</option>
+            <option >Consultant</option>
+            <option>Trainee</option>
+        </select><br><br>
+    </div>
+        <label for="empid">Emp_ID:</label>
+        <input type="number"id="empid" required maxlength="5"><br></br>
+
+        <label for="doj">Joining_date:</label>
+        <input type="date"id="doj" required min="1980-12-31" max="2023-12-31"><br></br>
+
+        <label for="hours">Hours_worked :</label>
+        <input type="number"id="hours" max="45" required><br></br>
+        <input type="submit" value="submit" onclick= "deta()"/>
+
+
+    </div>
+</form>
+
+</body>
+</html>
+
