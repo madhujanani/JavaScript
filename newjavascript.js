@@ -13,13 +13,22 @@
         { item: 'Nintendo 64', stock: 2, original: 199.99, discount: 0.65 } 
         
         ]; 
-        let  total,sale,original,item,stock,Discount;
-
+        let  total,sale,original,item,stock,Discount,allitems;
         const details = sales.map((items) => {
-            (items.discount==true)?total=((items.stock)*(items.original)*(items.discount/100)):total=((items.stock)*(items.original));
-            {
-                Discount=items.discount,original=items.original,sale =items.original ,item=items.item;stock=items.stock;
-                return { item,stock,original,Discount,total,sale }
-            }  
-        }) 
-        console.log(details)
+            if (items.discount==null) {
+                total=items.stock * items.original,sale =items.original;
+                Discount=items.discount,original=items.original,item=items.item;stock=items.stock;
+                allitems={ item,stock,original,total,sale }
+            } 
+            else {
+                sale=((items.original - (items.original*items.discount)).toFixed(2)) ,total = items.stock *sale 
+                    {   Discount=items.discount,original=items.original,item=items.item;stock=items.stock;
+                        allitems= {item,stock,original,Discount,total,sale }
+                    } 
+                }  
+                console.log(allitems)
+        } ) 
+
+
+            
+
