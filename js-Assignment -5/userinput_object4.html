@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./jsAssignment.css">
     <script src ="./userinput_object.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+
     <title>Userinput_form</title>
 </head>
 <body>
     <h1  style="text-align:center">Task/Assignment js-4</h1> 
     <div id="container">
+        
         <label for="txtnum1">FirstName</label>
         <input type="text" id ="txtnum1" value="hello">
 
@@ -25,7 +31,7 @@
         <input type="date" id ="sum" min="1970-12-31" max="2023-12-31"><br><br>
     <div>
         <label for="pob">POB</label>
-        <select id="pob">
+        <select id="pob" class="pob">
             <option>India</option>
             <option selected>USA</option>
             <option>UK</option>
@@ -34,7 +40,7 @@
             <option>japan</option>
         </select><br><br>
     </div>
-    <div id="gender">
+    <div id="gender" class="gender">
         <label for="female">Female</label>
         <input type="radio" id="female" name="gender">
         <label for="male">Male</label>
