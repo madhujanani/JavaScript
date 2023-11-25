@@ -53,22 +53,22 @@ class Employee {
 }
 function send()
 {
-    let name=$("#txtnum1").val();
-    let empid=$("#empid").val();
-    let joiningDate=$("#doj").val();
+    let namee=$("#txtnum1").val();
+    let empidd=$("#empid").val();
+    let joiningDatee=$("#doj").val();
     let design=$("#pob").val();
-    let workhrs=$("#hours").val();
-    let sal;
-    if (design === "Manager" ){
-        sal= 90*workhrs;
+    let workhrss=$("#hours").val();
+    let sall;
+    if (designn === "Manager" ){
+        sall= 90*workhrss;
     }
     else if (design === "Consultant"){
-        sal=75*workhrs;
+        sall=75*workhrss;
     }  
     else if(design === "Trainer"){
-        sal=50*workhrs;
+        sall=50*workhrss;
     } 
-    let newEmployee = new Employee(name,design,workhrs,joiningDate,empid,sal);
+    let newEmployee = new Employee(namee,designn,workhrss,joiningDatee,empidd,sall);
     alert("Data Send")
     localStorage.setItem("itemvalue",JSON.stringify(newEmployee));
 }

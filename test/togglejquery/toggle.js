@@ -6,17 +6,16 @@ $(document).ready(function(){
     $("button").click(()=>
     {
         $("p").hide();
-       alert($("button").html())
-
-       if($("button").html() == 'hide'){
+        alert($("button").html())
+    if($("button").html() == 'hide')
+    {
         $("p").hide();
         $("button").html('show')
-       }
-       else{
+    }
+    else{
         $("p").show();
         $("button").html('hide')
-
-       }
+    }
     })
 })
 
